@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY Dispatch_async</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            
+        });
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>872BFC2F-2F1F-48BE-AD9F-06B89D76C861</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>YY Dispatch_async</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GCD_Dispatch_async</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

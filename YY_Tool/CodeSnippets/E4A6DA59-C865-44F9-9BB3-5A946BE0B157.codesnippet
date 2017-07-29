@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY Label</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    label.backgroundColor = [UIColor &lt;#color#&gt;];
+    label.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+    label.text = &lt;#text#&gt;;
+    label.textAlignment = &lt;#NSTextAlignment#&gt;;
+    [&lt;#superview#&gt; addSubview:label];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E4A6DA59-C865-44F9-9BB3-5A946BE0B157</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>YY Label</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UILabel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

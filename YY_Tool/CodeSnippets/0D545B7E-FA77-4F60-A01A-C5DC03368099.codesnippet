@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY Timer</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> NSTimer *&lt;#timerName#&gt; = [NSTimer timerWithTimeInterval:&lt;#CGFloat_sec#&gt; target:self selector:@selector(&lt;#selector#&gt;) userInfo:nil repeats:YES];
+    /** 解决 滚动视图滚动的时候 timer暂停的问题 */
+    [[NSRunLoop currentRunLoop] addTimer:&lt;#timerName#&gt; forMode:NSRunLoopCommonModes];
+    
+    /** 移除 */
+    [&lt;#timerName#&gt; invalidate];
+    &lt;#timerName#&gt; = nil;
+    
+    /** 开启timer (可以先移除再创建timer)*/
+    if (&lt;#timerName#&gt; == nil) {
+        //重新创建
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0D545B7E-FA77-4F60-A01A-C5DC03368099</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>YY Timer</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSTimer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

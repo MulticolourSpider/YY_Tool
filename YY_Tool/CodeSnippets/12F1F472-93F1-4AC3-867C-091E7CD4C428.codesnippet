@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY TableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;UITableViewDelegate, UITableViewDataSource&gt;
+    
+    @property (nonatomic, strong) UITableView *tableView;
+    
+    /** 几个分区 */
+    -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+        
+        return &lt;#expression#&gt;;
+    }
+    /** 每个分区多少行 */
+    -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+        
+        return &lt;#expression#&gt;;
+    }
+    /** 每一行 */
+    -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+        
+        return &lt;#expression#&gt;;
+    }
+    /** 点击每一行 action */
+    -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+        
+    }
+    /** 每一行高度 */
+    -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+        return &lt;#expression#&gt;;
+    }
+    
+    /** lazy */
+    -(UITableView *)tableView {
+        if (_tableView == nil) {
+            _tableView = [[UITableView alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;) style:&lt;#UITableViewStyle#&gt;]
+            _tableView.dataSource = self;
+            _tableView.delegate = self;
+            [&lt;#superview#&gt; addSubview:_tableView];
+        }
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>12F1F472-93F1-4AC3-867C-091E7CD4C428</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>YY TableView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UITabelView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
