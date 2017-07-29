@@ -1,0 +1,2 @@
+*.sh linguist-language=objective-c
+*.codesnippet linguist-language=objective-c
