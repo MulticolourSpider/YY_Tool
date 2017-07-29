@@ -3,23 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>YY DocPath</string>
+	<string>YY hide_keyboard</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSString *filePath = [docPath stringByAppendingPathComponent:&lt;#NSString#&gt;];
-    NSLog(@"filePaht %@", filePath);</string>
+	<string>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+    [self.view endEditing:YES];
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CF7257F4-1089-42C5-82E7-6A956C9F702B</string>
+	<string>A807145A-F6BD-412C-AA06-DC931E43F730</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>一键 生成文件路径pathString</string>
+	<string>hide keyboard when touch background</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DocumentPath filePath</string>
+	<string>hide keyboard</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

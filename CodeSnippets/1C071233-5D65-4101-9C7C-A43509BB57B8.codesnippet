@@ -3,23 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>YY DocPath</string>
+	<string>YY custom_dispatch</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSString *filePath = [docPath stringByAppendingPathComponent:&lt;#NSString#&gt;];
-    NSLog(@"filePaht %@", filePath);</string>
+	<string>    dispatch_queue_t urls_queue = dispatch_queue_create("com.elctech.image_queue", NULL);
+    
+    dispatch_async(urls_queue, ^{
+        [self getImageUrls];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self downloadImages];
+        });
+    });
+    
+    dispatch_release(urls_queue);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CF7257F4-1089-42C5-82E7-6A956C9F702B</string>
+	<string>1C071233-5D65-4101-9C7C-A43509BB57B8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>一键 生成文件路径pathString</string>
+	<string>Custom dispatch queue</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DocumentPath filePath</string>
+	<string>Custom dispatch queue</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,23 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>YY DocPath</string>
+	<string>rrr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSString *filePath = [docPath stringByAppendingPathComponent:&lt;#NSString#&gt;];
-    NSLog(@"filePaht %@", filePath);</string>
+	<string>#pragma mark - Network Request Delegate
+
+- (void)requestFinished:(BaseRequest *)request {
+
+}
+
+- (void)requestFailed:(BaseRequest *)request {
+
+}
+
+- (void)clearRequest {
+
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CF7257F4-1089-42C5-82E7-6A956C9F702B</string>
+	<string>F2945E28-8E0F-4E27-8840-F40C4E7E7E5D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>一键 生成文件路径pathString</string>
+	<string>Network Request Delegate</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DocumentPath filePath</string>
+	<string>Network Request Delegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

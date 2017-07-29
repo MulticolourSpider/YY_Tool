@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>YY DocPath</string>
+	<string>YY ///</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSString *filePath = [docPath stringByAppendingPathComponent:&lt;#NSString#&gt;];
-    NSLog(@"filePaht %@", filePath);</string>
+	<string>/**
+ *
+ */</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CF7257F4-1089-42C5-82E7-6A956C9F702B</string>
+	<string>48DE1D79-02B2-47AC-9046-25DD6AF3ED6D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>一键 生成文件路径pathString</string>
+	<string>多行注释</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DocumentPath filePath</string>
+	<string>/// 注释</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

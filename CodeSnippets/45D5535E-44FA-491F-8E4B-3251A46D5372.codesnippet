@@ -3,23 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>YY DocPath</string>
+	<string>YY dispatch_once_t</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSString *filePath = [docPath stringByAppendingPathComponent:&lt;#NSString#&gt;];
-    NSLog(@"filePaht %@", filePath);</string>
+	<string>+ (instancetype)sharedInstance
+{
+    static id sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        sharedInstance = [[self alloc] init];
+    });    
+    return sharedInstance;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CF7257F4-1089-42C5-82E7-6A956C9F702B</string>
+	<string>45D5535E-44FA-491F-8E4B-3251A46D5372</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>一键 生成文件路径pathString</string>
+	<string> dispatch_once_t</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DocumentPath filePath</string>
+	<string>dispatch_once_t</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
