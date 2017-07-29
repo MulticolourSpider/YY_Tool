@@ -34,6 +34,7 @@ YY PCH                  一键定义常用宏                 #ifndef PrefixHead
                                                        触发 YY PCH
                                                     #endif
 
+YY TextField            一键盘 UITextField           { 触发 }
 
 
 
