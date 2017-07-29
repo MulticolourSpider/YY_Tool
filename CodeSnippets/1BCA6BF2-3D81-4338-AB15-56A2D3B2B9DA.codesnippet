@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY ImageView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIImageView*imageView=[[UIImageView alloc]initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    imageView.image= &lt;#imageName#&gt;;
+    //圆角
+    imageView.layer.masksToBounds = YES;
+    imageView.layer.cornerRadius = &lt;#CGFloat#&gt;;           //圆角
+    
+    //边框
+    imageView.layer.borderWidth = &lt;#CGFloat#&gt;;            //边框宽度
+    imageView.layer.borderColor = &lt;#UIColor#&gt;.CGColor;    //边框颜色
+    
+    //打开用户交互  UIImageView的用户交互是默认处于关闭状态的
+    //imageView.userInteractionEnabled=YES;
+    
+    //使图片保持原样不压缩
+    //imageView.contentMode = UIViewContentModeScaleAspectFill ;
+    
+    //剪切图片 按imageView的大小
+    //imageView.clipsToBounds = YES ;
+    
+    //让图片用原色显示 image
+    //    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] ;
+    [&lt;#superView#&gt; addSubview:imageView];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1BCA6BF2-3D81-4338-AB15-56A2D3B2B9DA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>YY ImageView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIImageView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
