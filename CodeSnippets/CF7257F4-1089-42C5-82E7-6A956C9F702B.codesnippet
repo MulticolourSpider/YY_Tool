@@ -3,27 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>YY Window</string>
+	<string>YY DocPath</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = &lt;#rootViewController#&gt;;
-    [self.window makeKeyAndVisible];</string>
+	<string> NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    NSString *filePath = [docPath stringByAppendingPathComponent:&lt;#NSString#&gt;];
+    NSLog(@"filePaht %@", filePath);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE25181C-41FC-436A-B948-6ADE2961E4FE</string>
+	<string>CF7257F4-1089-42C5-82E7-6A956C9F702B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>一键创建UIWindow</string>
+	<string>一键 生成文件路径pathString</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIWindow</string>
+	<string>DocumentPath filePath</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

@@ -24,7 +24,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>一键生成 子线程 到 主线程</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>YY Dispatch_async</string>
+	<string>(GCD)Dispatch_async</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

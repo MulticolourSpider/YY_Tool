@@ -54,7 +54,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>一键 创建 UITableView  delegate/DataSource method</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>YY TableView</string>
+	<string>UITableView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

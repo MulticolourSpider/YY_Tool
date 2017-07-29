@@ -28,7 +28,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>一键创建 计时器 暂停 和 开始</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>YY Timer</string>
+	<string>NSTimer</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

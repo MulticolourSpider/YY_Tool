@@ -139,7 +139,7 @@ return _instance; \
 	<key>IDECodeSnippetSummary</key>
 	<string>一键添加常用宏</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>YY PCH</string>
+	<string>PrefixHeader.pch </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
