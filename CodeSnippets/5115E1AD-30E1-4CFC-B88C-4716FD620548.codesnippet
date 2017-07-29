@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY PCH</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+#pragma mark - ====================  头文件
+#import &lt;UIKit/UIKit.h&gt;
+#import &lt;Foundation/Foundation.h&gt;
+
+
+#pragma mark - ====================  强弱self
+#define kWeakSelf(weakSelf)      __weak   __typeof(&amp;*self)weakSelf   = self;
+#define kStrongSelf(strongSelf)  __strong __typeof(&amp;*self)strongSelf = self;
+
+#pragma mark - ====================  log
+#ifdef DEBUG  //打印控制器名称 方法名称 所在行数
+#   define SSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define SSLog(...)
+#endif
+
+#pragma mark - ====================  frame  font
+//frame
+#define ONE_PX          1/[[UIScreen mainScreen] scale]
+#define SCREEN_WIDTH    ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT   ([UIScreen mainScreen].bounds.size.height)
+#define SCREEN_BOUNDS   [UIScreen mainScreen].bounds
+//font
+#define kFont(x)        [UIFont systemFontOfSize:x]
+#define kBoldFont(x)    [UIFont boldSystemFontOfSize:x]
+//程序的本地化,引用国际化的文件
+#define MyLocal(x, ...) NSLocalizedString(x, nil)
+
+
+#pragma mark - ====================  getSysMessage
+//获取系统版本  SSLog(@"%.1lf",kCurrentSystemVersion);  //保留几位小数
+#define kCurrentSystemVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+//获取当前语言
+#define kCurrentLanguage      ([[NSLocale preferredLanguages] objectAtIndex:0])
+#define IOS7   ([[UIDevice currentDevice].systemVersion doubleValue] &gt;= 7.0]
+#define IOS8   ([[UIDevice currentDevice].systemVersion doubleValue] &gt;= 8.0)
+#define iOS9   ([[[UIDevice currentDevice] systemVersion] floatValue] &gt;= 9.0)
+
+#define isRetina ([UIScreen instancesRespondToSelector:@selector(currentMode)] ?CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ?CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+//判断是真机还是模拟器
+#if TARGET_OS_IPHONE
+//iPhone Device
+#endif
+#if TARGET_IPHONE_SIMULATOR
+//iPhone Simulator
+#endif
+
+//使用ARC和不使用ARC
+#if __has_feature(objc_arc)
+//compiling with ARC
+#else
+// compiling without ARC
+#endif
+
+
+
+#pragma mark - ====================  image color
+//定义UIImage对象
+#define kImageNamed(_pointer)    [UIImage imageNamed:[UIUtil imageName:_pointer]]
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue &amp; 0xFF0000) &gt;&gt; 16))/255.0 green:((float)((rgbValue &amp; 0xFF00) &gt;&gt; 8))/255.0 blue:((float)(rgbValue &amp; 0xFF))/255.0 alpha:1.0]
+#define colorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue &amp; 0xFF0000) &gt;&gt; 16))/255.0 green:((float)((rgbValue &amp; 0xFF00) &gt;&gt; 8))/255.0 blue:((float)(rgbValue &amp; 0xFF))/255.0 alpha:1.0]
+#define kClearColor [UIColor clearColor]
+
+//带有RGBA的颜色设置
+#define colorWithR_G_B(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+//生成一个随机颜色
+#define random(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+
+
+
+#pragma mark - ====================  GCD
+// GLOBAL_THREAD(^{ code });
+#define GLOBAL_THREAD(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+#define MAIN_THREAD(block)   dispatch_async(dispatch_get_main_queue(),block)
+
+
+#pragma mark - ====================  通知中心
+#define kNotificationCenter    [NSNotificationCenter defaultCenter]
+
+
+#pragma mark - ====================  文件管理相关
+#define kUserDefault [NSUserDefaults standardUserDefaults]  //userDefault
+#define kFileManager [NSFileManager defaultManager]         //fileManager
+#define kDocmentPath NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject
+
+#pragma mark - ====================  单例一个类
+// .h
+#define singleton_interface(class) + (instancetype)shared##class;
+// .m
+#define singleton_implementation(class) \
+static class *_instance; \
+\
++ (id)allocWithZone:(struct _NSZone *)zone \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&amp;onceToken, ^{ \
+_instance = [super allocWithZone:zone]; \
+}); \
+\
+return _instance; \
+} \
+\
++ (instancetype)shared##class \
+{ \
+if (_instance == nil) { \
+_instance = [[class alloc] init]; \
+} \
+\
+return _instance; \
+}
+
+
+//由角度获取弧度 有弧度获取角度
+#define degreesToRadian(x) (M_PI * (x) / 180.0)
+#define radianToDegrees(radian) (radian*180.0)/(M_PI)
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5115E1AD-30E1-4CFC-B88C-4716FD620548</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>YY PCH</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>PrefixHeadr.pch</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
