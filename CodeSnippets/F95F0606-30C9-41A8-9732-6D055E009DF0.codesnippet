@@ -9,16 +9,21 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#UI#&gt;.layer.masksToBounds = YES;
-    &lt;#UI#&gt;.layer.cornerRadius = &lt;#CGFloat#&gt;;</string>
+	<string>//圆角
+&lt;#UI#&gt;.layer.masksToBounds = YES;
+&lt;#UI#&gt;.layer.cornerRadius = &lt;#CGFloat#&gt;;
+
+//边框
+&lt;#UI#&gt;.layer.borderWidth = &lt;#CGFloat#&gt;;
+&lt;#UI#&gt;.layer.borderColor = &lt;#UIColor#&gt;.CGColor;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F95F0606-30C9-41A8-9732-6D055E009DF0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>YY CornerRadius</string>
+	<string>一键设置UI的圆角 边框</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MakeCornerRadius</string>
+	<string>YY CornerRadius</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

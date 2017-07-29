@@ -22,9 +22,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>YY Dispatch_async</string>
+	<string>一键生成 子线程 到 主线程</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>GCD_Dispatch_async</string>
+	<string>YY Dispatch_async</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

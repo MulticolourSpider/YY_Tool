@@ -36,9 +36,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>YY ImageView</string>
+	<string>一键创建 UIImageView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIImageView</string>
+	<string>YY ImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

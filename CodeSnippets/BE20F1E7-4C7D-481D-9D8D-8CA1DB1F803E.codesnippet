@@ -20,9 +20,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>YY Button</string>
+	<string>一键创建 UIButton</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIButton</string>
+	<string>YY Button</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

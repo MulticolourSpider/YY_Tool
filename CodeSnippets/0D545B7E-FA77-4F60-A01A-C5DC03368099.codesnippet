@@ -26,9 +26,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>YY Timer</string>
+	<string>一键创建 计时器 暂停 和 开始</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSTimer</string>
+	<string>YY Timer</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -137,9 +137,9 @@ return _instance; \
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>YY PCH</string>
+	<string>一键添加常用宏</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>PrefixHeadr.pch</string>
+	<string>YY PCH</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

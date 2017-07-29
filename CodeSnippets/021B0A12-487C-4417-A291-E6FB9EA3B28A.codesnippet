@@ -30,9 +30,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>YY TextField</string>
+	<string>一键创建 UITextField</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITextField</string>
+	<string>YY TextField</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -52,9 +52,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>YY TableView</string>
+	<string>一键 创建 UITableView  delegate/DataSource method</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITabelView</string>
+	<string>YY TableView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
