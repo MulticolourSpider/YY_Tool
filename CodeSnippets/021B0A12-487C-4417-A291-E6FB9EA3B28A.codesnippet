@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY TextField</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UITextField*textField = [[UITextField alloc]initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    textField.placeholder = &lt;#placeholder#&gt;;
+    textField.textAlignment = &lt;#NSTextAlignment + esc#&gt;;
+    textField.secureTextEntry = &lt;#bool#&gt;;                        //是否密文输入
+    //textField.borderStyle = UITextBorderStyleLine;
+    textField.keyboardType = UIKeyboardTypeEmailAddress;      //键盘类型
+    textField.autocapitalizationType = NO;                    //关闭首字母大写
+    textField.clearButtonMode = YES;                          //清除按钮
+    textField.leftView = &lt;#imageView#&gt;;
+    textField.leftViewMode = UITextFieldViewModeAlways;
+    textField.rightView = &lt;#rightImageView#&gt;;
+    textField.rightViewMode = UITextFieldViewModeWhileEditing; //编辑状态下一直存在
+    //textField.inputView   //自定义键盘
+    textField.font = [UIFont systemFontOfSize:&lt;#font#&gt;];
+    textField.textColor = &lt;#UIColor#&gt;;
+    [&lt;#superView#&gt; addSubview:textField];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>021B0A12-487C-4417-A291-E6FB9EA3B28A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>YY TextField</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UITextField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
