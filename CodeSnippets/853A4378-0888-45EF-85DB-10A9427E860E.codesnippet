@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY ScrollView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+
+    scrollView.pagingEnabled = YES;                    //是否整页滑动
+    scrollView.contentSize = &lt;#CGSize#&gt;;
+    //scrollView.contentOffset = &lt;#CGPoint#&gt; ;
+    //隐藏滑动条  水平方向的
+    scrollView.showsHorizontalScrollIndicator = NO;
+    scrollView.showsVerticalScrollIndicator = NO;
+    //关闭点击状态栏滑动到顶部
+    scrollView.scrollsToTop = NO;
+    //    scrollView.bounces = YES ;   //弹性属性
+    //水平方向是否有弹性  (如果bounces设为NO，那么alwaysBounceHorizontal设置无效)
+    //    scrollView.alwaysBounceHorizontal = NO ;//水平
+    //    scrollView.alwaysBounceVertical = NO ;//垂直
+    [&lt;#superView#&gt; addSubview:scrollView];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>853A4378-0888-45EF-85DB-10A9427E860E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键创建 UIScrollView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIScrollView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

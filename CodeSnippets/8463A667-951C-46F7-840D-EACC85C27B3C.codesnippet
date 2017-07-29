@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY PageControl</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    
+    pageControl.numberOfPages = &lt;#number#&gt;;
+   
+    pageControl.currentPage = 0;
+    //关闭左右控制按键
+    pageControl.userInteractionEnabled = NO ;
+    [&lt;#superView#&gt; addSubview:pageControl];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8463A667-951C-46F7-840D-EACC85C27B3C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键创建 UIPageController</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIPageControl</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
