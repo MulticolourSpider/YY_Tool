@@ -35,7 +35,7 @@ YY Dispatch_async|一键 子 -> 主 线程(GCD)|{ 触发 }
 YY Timer|一键 NSTimer 带暂停/开始|{ 触发 }
 YY ImageView |一键 UIImageView 圆角+边框|{ 触发 }
 YY Switch  |一键创建 UISwitch 附带 点击Action| { 触发 }
-YY TextField|一键创建 UITextField|{ 触发 }
+YY TextField|一键创建 UITextField<br>自定义 清除按键 img <br>是否密文输入 placeholder|{ 触发 }
 YY ScrollView|一键创建 UIScrollView |{ 触发 }
 YY PageControl|一键创建 UIPageControl|{ 触发 }
 YY Slider|一键创建滑块 附带 值改变 拖动结束 method|{ 触发 } 
