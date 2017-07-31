@@ -16,29 +16,53 @@ https://github.com/MulticolourSpider/YY_Tool/blob/master/result.png
 
 ![image](https://github.com/MulticolourSpider/YY_Tool/blob/master/result.png)
 
+
+
+
+
+
+{ 触发 } 表示方法内触发 可利用Xcode自动补全如:YY cr
+触发 { } 表示方法外触发 可利用Xcode自动补全如:YY LC 
+
+调用 | 实现 | 触发方式
+---|---|---
+YY Button         | 一键创建UIButton|  { 触发 }  
+YY TableView|一键创建UITabelView  |{ 触发 }
+YY Label|一键创建UILabel|{ 触发 }
+YY Label+Custom|一键 Label自适应宽高| 触发 { }
+YY Window|一键创建UIWindow |{ 触发 }
+YY CornerRadius| 一键设置圆角 |{ 触发 } 
+YY Dispatch_async|一键 子 -> 主 线程(GCD)|{ 触发 }
+YY Timer|一键 NSTimer 带暂停/开始|{ 触发 }
+YY ImageView |一键 UIImageView 圆角+边框|{ 触发 }
+YY Switch  |一键创建 UISwitch 附带 点击Action| { 触发 }
+YY TextField|一键创建 UITextField|{ 触发 }
+YY ScrollView|一键创建 UIScrollView |{ 触发 }
+YY PageControl|一键创建 UIPageControl|{ 触发 }
+YY Slider|一键创建滑块 附带 值改变 拖动结束 method|{ 触发 } 
+YY /// |一键注释|触发 { }
+YY interface|一键添加 interface |#import 下面  触发
+YY POST_yuansheng | 一键生成 ios 原生 POST 网络请求,<br>post 参数(可选) <br>自定义请求头 HTTPHeader (可选)<br>支持: application/x-www-form-urlencoded<br>multipart/form-data  两种类型 POST|{ 触发 }
+
+
+
+
 ```
 
-调   用                  实        现                             触 发 方 式  
-                                                    { 触发 } 表示方法内触发 可利用Xcode自动补全如:YY cr
-                                                    触发 { } 表示方法外触发 可利用Xcode自动补全如:YY LC 
-
-
-YY Button               一键创建UIButton                           { 触发 }     
-YY TableView            一键创建UITabelView                        { 触发 }
-YY Label                一键创建UILabel                            { 触发 }
-YY Label+Custom         一键 Label自适应宽高                        触发 { }
-YY Window               一键创建UIWindow                           { 触发 }
-YY CornerRadius         一键设置圆角                                { 触发 }  
-YY Dispatch_async       一键 子 -> 主 线程(GCD)                     { 触发 }
-YY Timer                一键 NSTimer 带暂停/开始                    { 触发 }
-YY ImageView            一键 UIImageView 圆角+边框                  { 触发  }
-YY Switch               一键创建 UISwitch 附带 点击Action            { 触发 }
-YY TextField            一键创建 UITextField                       { 触发 }
-YY ScrollView           一键创建 UIScrollView                      { 触发 }
-YY PageControl          一键创建 UIPageControl                     { 触发 }
-YY Slider               一键创建滑块 附带 值改变 拖动结束 method       { 触发 } 
-YY ///                  一键注释                                   触发 { }
-YY interface            一键添加 interface                         import 下面  触发
+                           
+                                           
+                                
+                                         
+                                        
+                            
+                                    
+                        
+                                   
+                               
+                               
+                      
+                                                    
+                                    
 YY Assign               一键 声明 assign 属性                       interface 内触发
 YY Weak                 一键 weak 属性                             interface 内触发
 YY Strong               一键 声明 Strong 属性                       interface 内触发
@@ -93,10 +117,7 @@ YY PCH                  一键定义常用宏                             #ifnde
 ```
 
 
-调用 | 实现 | 触发方式
----|---|---
-YY Button         | 一键创建UIButton| { 触发 } 
-YY POST_yuansheng | 一键生成 ios 原生 POST 网络请求,<br>post 参数(可选) <br>自定义请求头 HTTPHeader (可选)<br>支持: application/x-www-form-urlencoded<br>multipart/form-data  两种类型 POST|#ifndef PrefixHeader_pch<br>#define PrefixHeader_pch<br>触发 YY PCH<br>#endif
+
 
 删除代码块:
 ```
