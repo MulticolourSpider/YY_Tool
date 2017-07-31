@@ -18,26 +18,26 @@ https://github.com/MulticolourSpider/YY_Tool/blob/master/result.png
 
 ```
 
-调   用                  实        现                触 发 方 式  
-                                                   { 触发 } 表示方法内触发 可利用Xcode自动补全如:YY cr 
-YY Button               一键创建UIButton              { 触发 }     
-YY TableView            一键创建UITabelView           { 触发 }
-YY Label                一键创建UILabel               { 触发 }
-YY Window               一键创建UIWindow              { 触发 }
-YY CornerRadius         一键设置圆角                   { 触发 }  
-YY Dispatch_async       一键 子 -> 主 线程(GCD)        { 触发 }
-YY Timer                一键 NSTimer 带暂停/开始       { 触发 }
-YY ImageView            一键 UIImageView 圆角+边框     { 触发  }
+调   用                  实        现                             触 发 方 式  
+                                                    { 触发 } 表示方法内触发 可利用Xcode自动补全如:YY cr 
+YY Button               一键创建UIButton                           { 触发 }     
+YY TableView            一键创建UITabelView                        { 触发 }
+YY Label                一键创建UILabel                            { 触发 }
+YY Window               一键创建UIWindow                           { 触发 }
+YY CornerRadius         一键设置圆角                                { 触发 }  
+YY Dispatch_async       一键 子 -> 主 线程(GCD)                     { 触发 }
+YY Timer                一键 NSTimer 带暂停/开始                    { 触发 }
+YY ImageView            一键 UIImageView 圆角+边框                  { 触发  }
 
-YY PCH                  一键定义常用宏                 #ifndef PrefixHeader_pch
-                                                    #define PrefixHeader_pch
-                                                       触发 YY PCH
-                                                    #endif
+YY PCH                  一键定义常用宏                               #ifndef PrefixHeader_pch
+                                                                  #define PrefixHeader_pch
+                                                                       触发 YY PCH
+                                                                  #endif
 
-YY TextField            一键创建 UITextField           { 触发 }
-YY ScrollView           一键创建 UIScrollView          { 触发 }
-YY PageControl          一键创建 UIPageControl         { 触发 }
-
+YY TextField            一键创建 UITextField                        { 触发 }
+YY ScrollView           一键创建 UIScrollView                       { 触发 }
+YY PageControl          一键创建 UIPageControl                      { 触发 }
+YY Slider               一键创建滑块 附带 值改变 拖动结束 method        { 触发 } 
 
 ```
 
