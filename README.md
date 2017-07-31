@@ -20,7 +20,33 @@ https://github.com/MulticolourSpider/YY_Tool/blob/master/result.png
 
 调   用                  实        现                             触 发 方 式  
                                                     { 触发 } 表示方法内触发 可利用Xcode自动补全如:YY cr
-                                                    触发 { } 表示方法外触发 可利用Xcode自动补全如:YY LC        
+                                                    触发 { } 表示方法外触发 可利用Xcode自动补全如:YY LC 
+
+YY Pay_IAP              一键创建 应用内支付(内购)                    { 触发 }
+YY POST_yuansheng       一键生成 ios 原生 POST 网络请求,
+                        post 参数(可选)
+                        自定义请求头 HTTPHeader (可选)
+                        支持: application/x-www-form-urlencoded  
+                             multipart/form-data  两种类型 POST   { 触发 }
+
+YY AFN_网络状态改变的时候触发     一键监听网络状态:
+                              蜂窝网络, 无网络, wifi
+                              网络变化时触发回调                    { 触发 }
+
+
+YY AFN_Upload           利用AFNetworking3.1.0封装的两种上传文件方式   触发 { }
+YY AFN_Get              一键生成 AFNetworking get 网络请求         { 触发 }
+YY AFN_POST             一键生成 AFNetworking POST 网络请求 带进度  { 触发 }
+
+YY AFN_Download         一键生成 AFNetworking Download 
+                        带下载进度 自定义存储filepath               { 触发 }   
+
+YY PCH                  一键定义常用宏                             #ifndef PrefixHeader_pch
+                                                                #define PrefixHeader_pch
+                                                                   触发 YY PCH
+                                                                #endif
+
+
 YY Button               一键创建UIButton                           { 触发 }     
 YY TableView            一键创建UITabelView                        { 触发 }
 YY Label                一键创建UILabel                            { 触发 }
@@ -59,28 +85,7 @@ YY hide_keyboard        一键 点击 view 隐藏键盘                     触�
 YY RequestDelegate      一键创建networkRequestDelegate             触发 {  }
 YY WebView              一键创建 UIWebView 附带Delegate            { 触发 }
 
-YY POST_yuansheng       一键生成 ios 原生 POST 网络请求,
-                        post 参数(可选)
-                        自定义请求头 HTTPHeader (可选)
-                        支持: application/x-www-form-urlencoded  
-                             multipart/form-data  两种类型 POST   { 触发 }
 
-YY AFN_网络状态改变的时候触发     一键监听网络状态:
-                              蜂窝网络, 无网络, wifi
-                              网络变化时触发回调                    { 触发 }
-
-
-YY AFN_Upload           利用AFNetworking3.1.0封装的两种上传文件方式   触发 { }
-YY AFN_Get              一键生成 AFNetworking get 网络请求         { 触发 }
-YY AFN_POST             一键生成 AFNetworking POST 网络请求 带进度  { 触发 }
-
-YY AFN_Download         一键生成 AFNetworking Download 
-                        带下载进度 自定义存储filepath               { 触发 }   
-
-YY PCH                  一键定义常用宏                             #ifndef PrefixHeader_pch
-                                                                 #define PrefixHeader_pch
-                                                                    触发 YY PCH
-                                                                 #endif
 
 ```
 

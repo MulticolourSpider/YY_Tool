@@ -1,0 +1,40 @@
+//
+//  Base64Utility.m
+//  GLPaint
+//
+//  Created by gao_yufeng on 8/4/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "Base64Utility.h"
+#import "GTMBase64.h" 
+
+@implementation Base64Utility
+
++ (NSString*)encodeBase64WithNSString:(NSString * )input 
+{ 
+    NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES]; 
+    data = [GTMBase64 encodeData:data]; 
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease]; 
+	return base64String;
+}
++ (NSString*)decodeBase64WithNSString:(NSString * )input 
+{ 
+    NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES]; 
+    data = [GTMBase64 decodeData:data]; 
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease]; 
+	return base64String;
+} 
+
++ (NSString*)encodeBase64WithNSData:(NSData *)data{
+	data = [GTMBase64 encodeData:data]; 
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+	return base64String;
+}
+
++ (NSString*)decodeBase64WithNSData:(NSData *)data{
+	data = [GTMBase64 decodeData:data]; 
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+	return base64String;
+} 
+@end

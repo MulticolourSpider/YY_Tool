@@ -1,0 +1,22 @@
+//
+//  Base64Utility.h
+//  GLPaint
+//
+//  Created by gao_yufeng on 8/4/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+
+@interface Base64Utility : NSObject {
+
+	
+}
+
++ (NSString*)encodeBase64WithNSString:(NSString *)input; 
++ (NSString*)decodeBase64WithNSString:(NSString *)input;
++ (NSString*)encodeBase64WithNSData:(NSData *)data;
++ (NSString*)decodeBase64WithNSData:(NSData *)data;
+
+@end

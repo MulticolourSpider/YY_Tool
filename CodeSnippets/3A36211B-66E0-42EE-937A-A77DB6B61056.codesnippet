@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY  Pay_IAP</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//#import "YYStoreKitManager.h"
+//需要在苹果后台添加内购项目, 并添加沙箱测试员账号
+//测试时, 先到手机设置里面将 iTunes Store 与 AppStore 已经登录的正式环境的账号退出(注销),提示:这里不能登录沙箱测试账号
+//直接执行下面两句代码 然后使用现有账号, 登录沙箱测试账号就可以购买成功了.
+[[YYStoreKitManager sharedInstance] initialStore];
+[[YYStoreKitManager sharedInstance] buy:@"产品ID"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3A36211B-66E0-42EE-937A-A77DB6B61056</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键 苹果支付 (IAP,In App Purchases 应用内支付)</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>IAP</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
