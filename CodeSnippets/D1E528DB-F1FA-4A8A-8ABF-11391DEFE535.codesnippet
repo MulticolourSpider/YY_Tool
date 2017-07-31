@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY SegmentedControlduogeyipaianjian</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> UISegmentedControl * segment = [[UISegmentedControl alloc]initWithItems:&lt;#@[@"第一个",@"第二个"....]#&gt;] ;
+    [segment addTarget:self action:@selector(valueChange:) forControlEvents:UIControlEventValueChanged];
+    segment.frame = CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;);
+    //改变选中状态
+    segment.momentary = YES ;
+    [&lt;#someView#&gt; addSubview:segment];
+    
+    
+    
+    //点击事件
+    - (void)valueChange:(UISegmentedControl *)segment
+    {
+        if (segment.selectedSegmentIndex == 0 &amp;&amp; segment.numberOfSegments &gt;3)
+        {
+            NSLog(@"删除") ;
+            //删除最后一个
+            [segment removeSegmentAtIndex:segment.numberOfSegments-1 animated:YES] ;
+        }
+        else if (segment.selectedSegmentIndex == 1)
+        {
+            NSLog(@"图片") ;
+        }
+        else
+        {
+            //添加到第4个位置
+            [segment insertSegmentWithTitle:@"标题" atIndex:3 animated:YES] ;
+            NSLog(@"添加") ;
+        }
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D1E528DB-F1FA-4A8A-8ABF-11391DEFE535</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键创建多格按键 附带示例点击action</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UISegmentedControl</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

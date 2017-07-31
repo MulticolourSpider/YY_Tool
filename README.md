@@ -51,6 +51,14 @@ YY ActivityIndicatorView一键 正在加载..(菊花)  转起来 暂停         
 YY AlertController      一键创建 警告框 附带 确定 取消 回调              { 触发 }
 YY AlertControllerUserNamePwdTextField
                         一键创建UIAlertController 附带Username/PwdTextField  { 触发 }
+
+YY PlayMusic            一键播放音频文件                               触发 { }
+
+YY SegmentedControlduogeyipaianjian 
+                        一键创建一排按键 多格按键 附带点击action        { 触发 }    
+
+
+
 ```
 
 

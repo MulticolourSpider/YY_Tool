@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY PlayMusic</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import &lt;AVFoundation/AVFoundation.h&gt;
+-(void)playAudioPlayerWithString:(NSString*)name delegate:(id)delegate
+{
+    NSString *urlStr=[[NSBundle mainBundle]pathForResource:name ofType:nil];
+    NSURL *url=[NSURL fileURLWithPath:urlStr];
+    NSError *error=nil;
+    AVAudioPlayer *audioPlayer=[[AVAudioPlayer alloc]initWithContentsOfURL:url error:&amp;error];
+    //设置播放器属性
+    audioPlayer.numberOfLoops=0;//设置为0不循环   MAXFLOAT一直重复
+    audioPlayer.delegate=delegate;
+    [audioPlayer prepareToPlay];//加载音频文件到缓存
+    if(error){
+        NSLog(@"初始化播放器过程发生错误,错误信息:%@",error.localizedDescription);
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>49CE67B3-4A9B-42EC-A77F-82DD89D7C83B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键播放音频文件</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>AVAudioPlayer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
