@@ -74,6 +74,9 @@ YY AFN_Upload           利用AFNetworking3.1.0封装的两种上传文件方式
 YY AFN_Get              一键生成 AFNetworking get 网络请求         { 触发 }
 YY AFN_POST             一键生成 AFNetworking POST 网络请求 带进度  { 触发 }
 
+YY AFN_Download         一键生成 AFNetworking Download 
+                        带下载进度 自定义存储filepath               { 触发 }   
+
 YY PCH                  一键定义常用宏                             #ifndef PrefixHeader_pch
                                                                  #define PrefixHeader_pch
                                                                     触发 YY PCH
