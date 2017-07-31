@@ -3,7 +3,7 @@ Xcode 一键导入代码块 一键调用 提高开发效率
 
 One button import code block, a key call to improve development efficiency
 
-<h3>使用:</h3>
+使用:
 ```
 cd YY_Tool
 ./setup_snippets.sh
@@ -65,17 +65,17 @@ YY PCH|一键定义常用宏|#ifndef PrefixHeader_pch<br>#define PrefixHeader_pc
 
 
 
-<h3>删除代码块:</h3>
+删除代码块:
 ```
 cd YY_Tool
 ./clear_snippets.sh
 ```
-<h3>清除Xcode 缓存垃圾,释放磁盘存储空间:</h3>
+清除Xcode 缓存垃圾,释放磁盘存储空间:
 ```
 cd YY_Tool
 ./clear_Temp_data.sh
 ```
-<h3>打开代码块所在位置:</h3>
+打开代码块所在位置:
 ```
 cd YY_Tool
 ./open_CodeSnippets.sh
