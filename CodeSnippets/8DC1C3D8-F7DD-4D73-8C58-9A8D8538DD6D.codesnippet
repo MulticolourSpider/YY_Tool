@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY ActivityIndicatorView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIActivityIndicatorView * activity = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)] ;
+    //设定样式
+    //    UIActivityIndicatorViewStyleWhiteLarge,
+    //    UIActivityIndicatorViewStyleWhite,
+    //    UIActivityIndicatorViewStyleGray
+    activity.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray ;
+    activity.hidesWhenStopped = YES ;
+    //开启动画
+    [activity startAnimating] ;
+    //关闭动画
+    //    [activity stopAnimating] ;
+    [&lt;#someView#&gt; addSubview:activity];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8DC1C3D8-F7DD-4D73-8C58-9A8D8538DD6D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键创建 菊花 附带 让菊花 转起来 暂定 action</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIActivityIndicatorView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
