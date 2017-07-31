@@ -42,6 +42,7 @@ YY Slider               一键创建滑块 附带 值改变 拖动结束 method 
 YY ///                  一键注释                                    触发 { }
 YY interface            一键添加 interface                          import 下面  触发
 YY Assign               一键 声明 assign 属性                        interface 内触发
+YY Weak                 一键 weak 属性                              interface 内触发
 YY Strong               一键 声明 Strong 属性                        interface 内触发
 YY Mark                 一键 mark                                  触发 {  }
 
