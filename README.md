@@ -58,6 +58,7 @@ YY SegmentedControlduogeyipaianjian
                         一键创建一排按键 多格按键 附带点击action        { 触发 }    
 
 
+YY hide_keyboard        一键 点击 view 隐藏键盘                      触发 {  }
 
 ```
 
