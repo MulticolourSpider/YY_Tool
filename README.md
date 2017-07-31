@@ -34,10 +34,19 @@ YY PCH                  一键定义常用宏                               #ifn
                                                                        触发 YY PCH
                                                                   #endif
 
+YY Switch               一键创建 UISwitch 附带 点击Action            { 触发 }
 YY TextField            一键创建 UITextField                        { 触发 }
 YY ScrollView           一键创建 UIScrollView                       { 触发 }
 YY PageControl          一键创建 UIPageControl                      { 触发 }
 YY Slider               一键创建滑块 附带 值改变 拖动结束 method        { 触发 } 
+YY ///                  一键注释                                    触发 { }
+YY interface            一键添加 interface                          import 下面  触发
+YY Assign               一键 声明 assign 属性                        interface 内触发
+YY Strong               一键 声明 Strong 属性                        interface 内触发
+YY Mark                 一键 mark                                  触发 {  }
+
+YY docPath              一键生成 documentPath                       { 触发 }
+YY NSNotificationCenter 一键发送 接收通知                             { 触发 }
 
 ```
 

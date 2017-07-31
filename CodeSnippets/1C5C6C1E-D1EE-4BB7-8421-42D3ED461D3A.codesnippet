@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY Swich</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> //不能设置大小 只能设置位置
+    UISwitch *switc = [[UISwitch alloc]initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    //添加触发事件
+    [switc addTarget:self action:@selector(&lt;#selector#&gt;:) forControlEvents:UIControlEventValueChanged];
+    //设置初始状态
+    switc.on = NO ;
+    [&lt;#superView#&gt; addSubview:switc];
+
+    //点击事件
+    -(void) &lt;#selector#&gt;:(UISwitch *) switc  {
+        
+        if (switc.on == YES) {
+            NSLog(@"开关被打开") ;
+        } else {
+            NSLog(@"开关被关闭") ;
+        }
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1C5C6C1E-D1EE-4BB7-8421-42D3ED461D3A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键创建Switch 附带点击事件 action</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UISwitch</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
