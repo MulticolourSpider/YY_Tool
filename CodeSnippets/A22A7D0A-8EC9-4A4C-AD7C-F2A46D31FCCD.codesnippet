@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY Slider</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UISlider *slider = [[UISlider alloc]initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    //最小值
+    slider.minimumValue = 0;
+    //最大值
+    slider.maximumValue = 1;
+    //设定中间球的图片
+    //    [slider setThumbImage:[UIImage imageNamed:@"qiu"] forState:UIControlStateNormal];
+    //右边颜色
+    slider.maximumTrackTintColor = [UIColor grayColor];
+    //左边颜色
+    slider.minimumTrackTintColor = [UIColor yellowColor];
+    slider.continuous = YES;
+    slider.enabled = YES;
+    //滑动事件 UIControlEventValueChanged
+    [slider addTarget:self action:@selector(sliderchange:) forControlEvents:UIControlEventValueChanged] ;
+    //滑动结束
+    [slider addTarget:self action:@selector(sliderEnd) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];
+    [&lt;#superView#&gt; addSubview:slider];
+
+
+    //每当值改变的时候调用
+    -(void)sliderchange:(UISlider *) slider {
+        float value = slider.value;
+        NSLog(@"%lf",value);
+    }
+    
+    //拖动结束的时候调用
+    -(void)sliderEnd {
+        NSLog(@"拖动结束");
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A22A7D0A-8EC9-4A4C-AD7C-F2A46D31FCCD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键创建 UISlider 附带值改变method 和 拖动结束 method</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UISlider</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
