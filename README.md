@@ -47,20 +47,20 @@ YY Strong               一键 声明 Strong 属性                        inter
 YY Mark                 一键 mark                                  触发 {  }
 
 YY docPath              一键生成 documentPath                       { 触发 }
-YY NSNotificationCenter 一键发送 接收通知                             { 触发 }
-YY ActivityIndicatorView一键 正在加载..(菊花)  转起来 暂停              { 触发 }   
-YY AlertController      一键创建 警告框 附带 确定 取消 回调              { 触发 }
+YY NSNotificationCenter 一键发送 接收通知                            { 触发 }
+YY ActivityIndicatorView一键 正在加载..(菊花)  转起来 暂停             { 触发 }   
+YY AlertController      一键创建 警告框 附带 确定 取消 回调             { 触发 }
 YY AlertControllerUserNamePwdTextField
                         一键创建UIAlertController 附带Username/PwdTextField  { 触发 }
 
-YY PlayMusic            一键播放音频文件                               触发 { }
+YY PlayMusic            一键播放音频文件                             触发 { }
 
 YY SegmentedControlduogeyipaianjian 
                         一键创建一排按键 多格按键 附带点击action        { 触发 }    
 
 
 YY hide_keyboard        一键 点击 view 隐藏键盘                      触发 {  }
-YY RequestDelegate      一键创建networkRequestDelegate             触发 {  }
+YY RequestDelegate      一键创建networkRequestDelegate              触发 {  }
 YY WebView              一键创建 UIWebView 附带Delegate             { 触发 }
 
 
