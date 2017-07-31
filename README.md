@@ -93,6 +93,10 @@ YY PCH                  一键定义常用宏                             #ifnde
 ```
 
 
+调用 | 实现 | 触发方式
+---|---|---
+YY Button         | 一键创建UIButton| { 触发 } 
+YY POST_yuansheng | 一键生成 ios 原生 POST 网络请求,<br>post 参数(可选) <br>自定义请求头 HTTPHeader (可选)<br>支持: application/x-www-form-urlencoded<br>multipart/form-data  两种类型 POST|{ 触发 }
 
 删除代码块:
 ```
