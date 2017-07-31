@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY WebView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    NSURL *url = [NSURL URLWithString:&lt;#urlString#&gt;];
+    NSURLRequest *requst = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:requst];
+    webView.delegate = self;
+    [&lt;#someView#&gt; addSubview:webView];
+    
+   
+    #pragma mark - webViewDelegate
+    -(void)webViewDidStartLoad:(UIWebView *)webView {
+        NSLog(@"开始加载");
+    }
+    -(void)webViewDidFinishLoad:(UIWebView *)webView {
+        NSLog(@"加载完成");
+        
+    }
+    -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+        NSLog(@"加载失败 %@",error);
+    }
+    
+    //捕获每次打开的网页
+    -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+        NSString *urlString = [[request URL] absoluteString];
+        urlString = [urlString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSLog(@"urlString=%@",urlString);
+        return YES;
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>566A116E-AD32-4E7F-8157-3BDB6A33AF35</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键创建UIWebView 附带Delegate</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIWebView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

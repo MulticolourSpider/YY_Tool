@@ -59,6 +59,10 @@ YY SegmentedControlduogeyipaianjian
 
 
 YY hide_keyboard        一键 点击 view 隐藏键盘                      触发 {  }
+YY RequestDelegate      一键创建networkRequestDelegate             触发 {  }
+YY WebView              一键创建 UIWebView 附带Delegate             { 触发 }
+
+
 
 ```
 
