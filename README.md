@@ -63,7 +63,7 @@ YY AFN_POST |一键生成 AFNetworking POST 网络请求 带进度|触发 { }
 YY AFN_Download |一键生成 AFNetworking Download<br>带下载进度 自定义存储filepath |触发 { }
 YY POST_yuansheng | 一键生成 ios 原生 POST 网络请求,<br>post 参数(可选) <br>自定义请求头 HTTPHeader (可选)<br>支持: application/x-www-form-urlencoded<br>multipart/form-data  两种类型 POST|{ 触发 }
 YY PCH|一键定义常用宏|#ifndef PrefixHeader_pch<br>#define PrefixHeader_pch<br>触发 YY PCH <br>#endif
-
+YY|一键测试|{触发}
 
 
 删除代码块:
