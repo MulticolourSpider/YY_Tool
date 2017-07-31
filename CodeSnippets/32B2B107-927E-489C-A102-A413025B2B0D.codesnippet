@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY AlertControllerUserNamePwdTextField</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//    @property (nonatomic, strong) UITextField *nameTextfield;
+    //    @property (nonatomic, strong) UITextField *pwdTextfield;
+    UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:&lt;#标题#&gt; message:&lt;#描述#&gt; preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消"style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+        NSLog(@" 取消按键被点击 用户名:%@ 密码: %@",self.nameTextfield.text,self.pwdTextfield.text);
+    }];
+    UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定"style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@" 确定按键被点击 用户名:%@ 密码: %@",self.nameTextfield.text,self.pwdTextfield.text);
+    }];
+    __weak typeof (self) weakSelf = self;
+    [alertVc addTextFieldWithConfigurationHandler:^(UITextField*textField){
+        
+        textField.placeholder = @"用户名";
+        
+        textField.secureTextEntry = NO;
+        weakSelf.nameTextfield = textField;
+        
+    }];
+    [alertVc addTextFieldWithConfigurationHandler:^(UITextField*textField){
+        
+        textField.placeholder = @"密码";
+        
+        textField.secureTextEntry = YES;
+        weakSelf.pwdTextfield = textField;
+    }];
+    [alertVc addAction:cancelAction];
+    [alertVc addAction:sureAction];
+    [self presentViewController:alertVc animated:YES completion:^{ }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>32B2B107-927E-489C-A102-A413025B2B0D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键创建 UIAlertController 附带userName/PwdTextField</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIAlertController userName userPassword</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

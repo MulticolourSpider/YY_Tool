@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY AlertController</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIAlertController *alert = [UIAlertController alertControllerWithTitle:&lt;#(nullable NSString *)#&gt; message:&lt;#(nullable NSString *)#&gt; preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"确定按键被点击");
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"取消按键被点击");
+    }];
+    
+    [alert addAction:sureAction];
+    [alert addAction:cancelAction];
+    [self presentViewController:alert animated:YES completion:^{
+        &lt;#code#&gt;
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>75CBC3C4-E06B-4EA5-9CB9-2355EFF782A5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键创建警告框</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIAlertController_alert</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

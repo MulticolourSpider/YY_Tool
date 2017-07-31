@@ -48,8 +48,9 @@ YY Mark                 一键 mark                                  触发 {  }
 YY docPath              一键生成 documentPath                       { 触发 }
 YY NSNotificationCenter 一键发送 接收通知                             { 触发 }
 YY ActivityIndicatorView一键 正在加载..(菊花)  转起来 暂停              { 触发 }   
-
-
+YY AlertController      一键创建 警告框 附带 确定 取消 回调              { 触发 }
+YY AlertControllerUserNamePwdTextField
+                        一键创建UIAlertController 附带Username/PwdTextField  { 触发 }
 ```
 
 
