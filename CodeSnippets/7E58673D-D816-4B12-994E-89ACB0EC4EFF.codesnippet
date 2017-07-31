@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY AFN_GET</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //设置超时时间
+    manager.requestSerializer.timeoutInterval = 15.0f;
+    //manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    //manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
+    [manager GET:@"" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        NSLog(@"Sucess");
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+       
+        NSLog(@"error %@",error);
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7E58673D-D816-4B12-994E-89ACB0EC4EFF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键生成 AFNetworking get 网络请求</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>AFNetworking get 网络请求</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

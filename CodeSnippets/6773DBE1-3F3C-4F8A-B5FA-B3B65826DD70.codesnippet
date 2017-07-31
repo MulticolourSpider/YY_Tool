@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY Lable+Custom</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//uilabel+custom.m(UILabel的分类)
+    //自适应宽度和高度
+    + (CGFloat)getHeightByWidth:(CGFloat)width title:(NSString *)title font:(UIFont *)font
+    {
+        
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width, 0)];
+        label.text = title;
+        label.font = font;
+        label.numberOfLines = 0;
+        [label sizeToFit];
+        CGFloat height = label.frame.size.height;
+        return height;
+    }
+    
+    + (CGFloat)getWidthWithTitle:(NSString *)title font:(UIFont *)font {
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 1000, 0)];
+        label.text = title;
+        label.font = font;
+        [label sizeToFit];
+        return label.frame.size.width;
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6773DBE1-3F3C-4F8A-B5FA-B3B65826DD70</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIlabel的分类 让label自适应 高度 和 宽度</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UILabel+Custom</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

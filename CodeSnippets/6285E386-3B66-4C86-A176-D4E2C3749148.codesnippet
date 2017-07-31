@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY AFN_监听网络状态,网络改变触发回调</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> //#import &lt;AFNetworking/AFNetworking.h&gt;
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    
+    /*枚举里面四个状态  分别对应 未知 无网络 数据 WiFi
+     typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) {
+     AFNetworkReachabilityStatusUnknown          = -1,      未知
+     AFNetworkReachabilityStatusNotReachable     = 0,       无网络
+     AFNetworkReachabilityStatusReachableViaWWAN = 1,       蜂窝数据网络
+     AFNetworkReachabilityStatusReachableViaWiFi = 2,       WiFi
+     };
+     */
+    
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+                NSLog(@"未知网络状态");
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"无网络");
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                NSLog(@"蜂窝数据网");
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                NSLog(@"WiFi网络");
+                
+                break;
+                
+            default:
+                break;
+        }
+    }];
+    [manager startMonitoring];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6285E386-3B66-4C86-A176-D4E2C3749148</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键 监听网络状态  网络发生改变的时候触发回调</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>AFNetworking3.0以上</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
