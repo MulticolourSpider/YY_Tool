@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY PickerView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//遵循两个代理&lt;UIPickerViewDelegate,UIPickerViewDataSource&gt;
+//@property (nonatomic, strong) UIPickerView *pickerView;
+//@property (nonatomic, strong) NSArray *array1;
+//@property (nonatomic, strong) NSArray *array2;
+self.array1 = @[@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星六一",@"星期七",@"星期八,这一天退休在家玩游戏"];
+self.array2 = @[@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星六一",@"星期七",@"星期八,这一天退休在家玩游戏"];
+self.pickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 120)];
+self.pickerView.backgroundColor = [UIColor grayColor];
+self.pickerView.delegate = self;
+self.pickerView.dataSource = self;
+self.pickerView.showsSelectionIndicator = YES;
+[self.view addSubview:_pickerView];
+
+//测试获取两个轮子的值
+UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+btn.frame = CGRectMake(0, 300, SCREEN_WIDTH, 30);
+[btn setTitle:@"获取两个轮子上面的值" forState:UIControlStateNormal];
+[btn setBackgroundColor:[UIColor magentaColor]];
+[btn addTarget:self action:@selector(huoqulianggelunzishangmiandezhi) forControlEvents:UIControlEventTouchUpInside];
+[self.view addSubview:btn];
+
+#pragma mark - PickerView代理
+//滚轮个数
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 2;
+}
+//每个滚轮内的数据个数
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    if (component == 0) {
+        //滚轮1
+        return [self.array1 count];
+    }
+    //滚轮2
+    return [self.array2 count];
+}
+//滚轮停止时调用
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    if (component ==0) {
+        //滚轮1
+        NSString *str1 = [self.array1 objectAtIndex:row];
+        NSLog(@"%@",str1);
+    }  else {
+        //滚轮2
+        NSString *str2 = [self.array2 objectAtIndex:row];
+        NSLog(@"%@",str2);
+    }
+}
+//设置滚轮宽度
+- (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
+    return 120;
+}
+//返回当前行的内容
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    if (component == 0) {
+        return [self.array1 objectAtIndex:row];
+    }
+    return [self.array2 objectAtIndex:row];
+}
+//拿到当前滚轮选择数据
+- (void)huoqulianggelunzishangmiandezhi {
+    
+    //滚轮1
+    NSInteger singgerow = [self.pickerView selectedRowInComponent:0];
+    //滚轮2
+    NSInteger singrow = [self.pickerView selectedRowInComponent:1];
+    NSString *str = [NSString stringWithFormat:@"%@:%@",self.array1[singgerow],self.array2[singrow]];
+    NSLog(@"%@",str);
+    [_pickerView removeFromSuperview];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E1DCA19E-0BD3-4CF5-BFEA-16327ACBC64C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键 自定义 UIPickerView Delegate/dataSource method</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIPickerView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

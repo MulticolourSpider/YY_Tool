@@ -28,6 +28,7 @@ YY Button         | 一键创建UIButton|  { 触发 }
 YY TableView|一键创建UITabelView  |{ 触发 }
 YY Label|一键创建UILabel|{ 触发 }
 YY Label+Custom|一键 Label自适应宽高| 触发 { }
+YY PickerView|一键自定义UIPickerView| { 触发 }
 YY Window|一键创建UIWindow |{ 触发 }
 YY CornerRadius| 一键设置圆角 |{ 触发 } 
 YY Dispatch_async|一键 子 -> 主 线程(GCD)|{ 触发 }
