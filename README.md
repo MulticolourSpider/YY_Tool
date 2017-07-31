@@ -60,10 +60,14 @@ YY SegmentedControlduogeyipaianjian
 
 
 YY hide_keyboard        一键 点击 view 隐藏键盘                      触发 {  }
-YY RequestDelegate      一键创建networkRequestDelegate              触发 {  }
+YY RequestDelegate      一键创建networkRequestDelegate             触发 {  }
 YY WebView              一键创建 UIWebView 附带Delegate             { 触发 }
 
-
+YY POST_yuansheng       一键生成 ios 原生 POST 网络请求,
+                        post 参数(可选)
+                        自定义请求头 HTTPHeader (可选)
+                        支持: application/x-www-form-urlencoded  
+                             multipart/form-data  两种类型 POST    { 触发 }
 
 ```
 

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YY POST_yuansheng</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSString *urlStr = @"接口地址";
+NSURL *url = [NSURL URLWithString:urlStr];
+NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+request.HTTPMethod = @"POST";
+//post参数
+NSString *value = @"value";
+NSString *value2 = @"value2";
+NSString *httpbodyString = [NSString stringWithFormat:@"key=%@&amp;key2=%@",value,value2];
+request.HTTPBody = [httpbodyString dataUsingEncoding:NSUTF8StringEncoding];
+//请求头 HTTPHeader
+NSMutableURLRequest *mutableRequest = [request mutableCopy];
+[mutableRequest addValue:@"" forHTTPHeaderField:@"AGENT"];
+[mutableRequest addValue:@"" forHTTPHeaderField:@"AUTH"];
+//[mutableRequest addValue:@"multipart/form-data; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+[mutableRequest addValue:@"application/x-www-form-urlencoded; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+request = [mutableRequest copy];
+
+NSURLSession *session = [NSURLSession sharedSession];
+NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        if (error) {
+            SSLog(@"=========== error ==========");
+        }  else {
+            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+            NSLog(@"%@",httpbodyString);
+            NSLog(@"%@",dic);
+            //解析dic 给Model赋值 或者 本地存储数据
+            
+        }
+    });
+    
+}];
+[dataTask resume];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BC5A4D5B-EA3A-4B57-AC87-436F2A48D938</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>一键生成 POST 网络请求 IOS原生</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>POST网络请求IOS原生</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
