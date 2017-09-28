@@ -9,7 +9,7 @@ cd YY_Tool
 ./setup_snippets.sh
 成功之后输出:
 Done  
-重新新打开Xcode  (需要先完全退出Xcode)
+重新新打开Xcode (需要先完全退出Xcode)
 ```
 查看效果图:
 https://github.com/MulticolourSpider/YY_Tool/blob/master/result.png
